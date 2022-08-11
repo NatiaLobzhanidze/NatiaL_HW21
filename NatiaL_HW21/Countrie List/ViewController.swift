@@ -7,8 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    var allCountries = [Model]()
+class ViewController: UIViewController  {
+ 
+    
+    
+    var allCountries = [CountryModel]()
+    var filteredCountries = [CountryModel]()
     
     lazy var tableView: UITableView = {
         let tv = UITableView()
@@ -17,6 +21,17 @@ class ViewController: UIViewController {
         tv.dataSource = self
         tv.register(CountryTableViewCell.self, forCellReuseIdentifier: "CountryTableViewCell")
         return tv
+    }()
+    
+    lazy var mySearchBar: UISearchController = {
+        let searchB = UISearchController()
+        searchB.searchResultsUpdater = self
+        searchB.obscuresBackgroundDuringPresentation = false
+        searchB.searchBar.placeholder = "Search countries.."
+        searchB.searchBar.sizeToFit()
+        searchB.searchBar.searchBarStyle = .prominent
+        searchB.searchBar.delegate = self
+        
     }()
     
     let apiManager = APIManager()

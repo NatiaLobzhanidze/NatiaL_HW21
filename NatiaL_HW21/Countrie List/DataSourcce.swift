@@ -19,7 +19,24 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let countryName = allCountries[indexPath.row]
         
         cell.titleLb.text = countryName.name.official
+     
+        
+       // navigationController?.pushViewController(vc, animated: true)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let countryName = allCountries[indexPath.row]
+        let imgUrl = URL(string: countryName.flags.png) ??  URL(string: "https://www.generationsforpeace.org/wp-content/uploads/2018/03/empty.jpg")
+        let vc = CountryDetailsViewController()
+        vc.flagImage.load(url: imgUrl!)
+        vc.countrieName.text = countryName.name.official
+        
+        if let capital = countryName.capital {
+            vc.capitalName.text =  capital.joined(separator: ",") }
+       
+        navigationController?.pushViewController(vc, animated: true)
+        
     }
     
     

@@ -10,7 +10,7 @@ import UIKit
 
 class APIManager {
     
-    func getNames (complition: @escaping([Model]) -> (Void)){
+    func getNames (complition: @escaping([CountryModel]) -> (Void)){
         
         let urlString = "https://restcountries.com/v3.1/all"
         guard let url = URL(string: urlString) else { return }
@@ -19,7 +19,7 @@ class APIManager {
         session.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
             let decoder = JSONDecoder()
-            let object = try! decoder.decode([Model].self, from: data)
+            let object = try! decoder.decode([CountryModel].self, from: data)
             
             DispatchQueue.main.async {
                 complition(object)

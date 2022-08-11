@@ -31,7 +31,7 @@ class CountryTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             titleLb.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
             titleLb.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0),
-            titleLb.widthAnchor.constraint(equalToConstant: 159),
+            titleLb.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
             titleLb.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
