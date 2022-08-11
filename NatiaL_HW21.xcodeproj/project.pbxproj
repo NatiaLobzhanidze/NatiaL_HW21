@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60746C8428A503DF003A5BFB /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746C8328A503DF003A5BFB /* CountryModel.swift */; };
+		60746C9028A50D53003A5BFB /* ContinentListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746C8A28A50D53003A5BFB /* ContinentListPresenter.swift */; };
+		60746C9128A50D53003A5BFB /* ContinentListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746C8B28A50D53003A5BFB /* ContinentListWorker.swift */; };
+		60746C9228A50D53003A5BFB /* ContinentListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746C8C28A50D53003A5BFB /* ContinentListRouter.swift */; };
+		60746C9328A50D53003A5BFB /* ContinentListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746C8D28A50D53003A5BFB /* ContinentListModels.swift */; };
+		60746C9428A50D53003A5BFB /* ContinentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746C8E28A50D53003A5BFB /* ContinentListViewController.swift */; };
+		60746C9528A50D53003A5BFB /* ContinentListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746C8F28A50D53003A5BFB /* ContinentListInteractor.swift */; };
+		60746C9B28A522F3003A5BFB /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746C9A28A522F3003A5BFB /* CountryTableViewCell.swift */; };
+		60746C9D28A524EF003A5BFB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746C9C28A524EF003A5BFB /* Model.swift */; };
+		60746C9F28A52673003A5BFB /* DataSourcce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746C9E28A52673003A5BFB /* DataSourcce.swift */; };
+		60746CA128A52A52003A5BFB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60746CA028A52A52003A5BFB /* APIManager.swift */; };
 		60CB849E28A447160035C421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CB849D28A447160035C421 /* AppDelegate.swift */; };
 		60CB84A028A447160035C421 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CB849F28A447160035C421 /* SceneDelegate.swift */; };
 		60CB84A228A447160035C421 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CB84A128A447160035C421 /* ViewController.swift */; };
@@ -16,6 +27,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60746C8328A503DF003A5BFB /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		60746C8A28A50D53003A5BFB /* ContinentListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListPresenter.swift; sourceTree = "<group>"; };
+		60746C8B28A50D53003A5BFB /* ContinentListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListWorker.swift; sourceTree = "<group>"; };
+		60746C8C28A50D53003A5BFB /* ContinentListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListRouter.swift; sourceTree = "<group>"; };
+		60746C8D28A50D53003A5BFB /* ContinentListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListModels.swift; sourceTree = "<group>"; };
+		60746C8E28A50D53003A5BFB /* ContinentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListViewController.swift; sourceTree = "<group>"; };
+		60746C8F28A50D53003A5BFB /* ContinentListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentListInteractor.swift; sourceTree = "<group>"; };
+		60746C9A28A522F3003A5BFB /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		60746C9C28A524EF003A5BFB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		60746C9E28A52673003A5BFB /* DataSourcce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourcce.swift; sourceTree = "<group>"; };
+		60746CA028A52A52003A5BFB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		60CB849A28A447160035C421 /* NatiaL_HW21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NatiaL_HW21.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CB849D28A447160035C421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60CB849F28A447160035C421 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +59,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60746C8028A503AD003A5BFB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				60746C8128A503C3003A5BFB /* Countries */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		60746C8128A503C3003A5BFB /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				60746C8228A503CD003A5BFB /* Models */,
+				60746C8528A5097D003A5BFB /* Scenes */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		60746C8228A503CD003A5BFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60746C8328A503DF003A5BFB /* CountryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60746C8528A5097D003A5BFB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				60746C8928A509F7003A5BFB /* ContinentList */,
+				60746C8728A509B2003A5BFB /* CountryList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		60746C8728A509B2003A5BFB /* CountryList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CountryList;
+			sourceTree = "<group>";
+		};
+		60746C8928A509F7003A5BFB /* ContinentList */ = {
+			isa = PBXGroup;
+			children = (
+				60746C8A28A50D53003A5BFB /* ContinentListPresenter.swift */,
+				60746C8B28A50D53003A5BFB /* ContinentListWorker.swift */,
+				60746C8C28A50D53003A5BFB /* ContinentListRouter.swift */,
+				60746C8D28A50D53003A5BFB /* ContinentListModels.swift */,
+				60746C8E28A50D53003A5BFB /* ContinentListViewController.swift */,
+				60746C8F28A50D53003A5BFB /* ContinentListInteractor.swift */,
+			);
+			path = ContinentList;
+			sourceTree = "<group>";
+		};
+		60746C9628A51737003A5BFB /* ForVIP */ = {
+			isa = PBXGroup;
+			children = (
+				60746C8028A503AD003A5BFB /* Domain */,
+			);
+			path = ForVIP;
+			sourceTree = "<group>";
+		};
 		60CB849128A447160035C421 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +140,28 @@
 		60CB849C28A447160035C421 /* NatiaL_HW21 */ = {
 			isa = PBXGroup;
 			children = (
-				60CB849D28A447160035C421 /* AppDelegate.swift */,
-				60CB849F28A447160035C421 /* SceneDelegate.swift */,
+				60746C9628A51737003A5BFB /* ForVIP */,
+				60CB84B128A4471E0035C421 /* Source Fiels */,
 				60CB84A128A447160035C421 /* ViewController.swift */,
+				60746C9C28A524EF003A5BFB /* Model.swift */,
+				60746C9A28A522F3003A5BFB /* CountryTableViewCell.swift */,
+				60746C9E28A52673003A5BFB /* DataSourcce.swift */,
+				60746CA028A52A52003A5BFB /* APIManager.swift */,
 				60CB84A328A447160035C421 /* Main.storyboard */,
 				60CB84A628A447170035C421 /* Assets.xcassets */,
 				60CB84A828A447170035C421 /* LaunchScreen.storyboard */,
 				60CB84AB28A447170035C421 /* Info.plist */,
 			);
 			path = NatiaL_HW21;
+			sourceTree = "<group>";
+		};
+		60CB84B128A4471E0035C421 /* Source Fiels */ = {
+			isa = PBXGroup;
+			children = (
+				60CB849D28A447160035C421 /* AppDelegate.swift */,
+				60CB849F28A447160035C421 /* SceneDelegate.swift */,
+			);
+			path = "Source Fiels";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +235,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60746C9128A50D53003A5BFB /* ContinentListWorker.swift in Sources */,
+				60746C9528A50D53003A5BFB /* ContinentListInteractor.swift in Sources */,
+				60746C9228A50D53003A5BFB /* ContinentListRouter.swift in Sources */,
+				60746C9D28A524EF003A5BFB /* Model.swift in Sources */,
+				60746C9F28A52673003A5BFB /* DataSourcce.swift in Sources */,
+				60746C9B28A522F3003A5BFB /* CountryTableViewCell.swift in Sources */,
+				60746CA128A52A52003A5BFB /* APIManager.swift in Sources */,
 				60CB84A228A447160035C421 /* ViewController.swift in Sources */,
 				60CB849E28A447160035C421 /* AppDelegate.swift in Sources */,
+				60746C8428A503DF003A5BFB /* CountryModel.swift in Sources */,
+				60746C9428A50D53003A5BFB /* ContinentListViewController.swift in Sources */,
+				60746C9028A50D53003A5BFB /* ContinentListPresenter.swift in Sources */,
+				60746C9328A50D53003A5BFB /* ContinentListModels.swift in Sources */,
 				60CB84A028A447160035C421 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
